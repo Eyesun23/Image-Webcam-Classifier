@@ -1,9 +1,9 @@
-##Image classifier with Angular and Tensorflow.js
+## Image classifier with Angular and Tensorflow.js
 
 Upload an image, and let the browser classify.
 Let the browser access your webcam, and let the browser classify what it sees in the webcam.
 
-##Installation
+## Installation
 
 
 Make sure you have the Angular 8 installed.
