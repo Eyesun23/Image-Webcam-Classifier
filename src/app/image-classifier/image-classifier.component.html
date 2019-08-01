@@ -1,0 +1,19 @@
+<div class="cont d-flex justify-content-center align-items-center flex-column">
+  <h2 class="page-title">Image Classifier with Angular</h2>
+
+  <div class="custom-file">
+    <input type="file" class="custom-file-input" (change)="fileChangeEvent($event)">
+    <label class="custom-file-label">Upload Image</label>
+  </div>
+  <div *ngIf="loading; else elseBlock">
+  </div>
+  <ng-template #elseBlock>
+    <img [src]="imageSrc" #img *ngIf="imageSrc" />
+  </ng-template>
+
+  <div class="list-group">
+    <div class="list-group-item" *ngFor="let prediction of predictions">
+      {{prediction.className}} - {{prediction.probability}}
+    </div>
+  </div>
+</div>
